@@ -29,7 +29,8 @@ exports.run = (bot, msg, args) => {
         response = 'HAH';
     }
 
-    msg.edit(`:8ball: | **${response}**`);
+    msg.edit(`:8ball: | Question: **${args}**`);
+    msg.channel.send(`:8ball: | Answer: **${response}**`);
 };
 
 
